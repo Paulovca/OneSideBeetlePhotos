@@ -1,0 +1,80 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.title-container {
+    background-color: black;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-container h1 {
+    color: blanchedalmond;
+}
+
+.title-container h1:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.slideshow-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.slideshow-container .mySlides-fade img{
+    max-height: 500px;
+}
+
+.mySlides-fade {
+    display: none;
+  }
+
+.upload-button {
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.upload-button a {
+    text-decoration: none;
+    cursor: pointer;
+    font: 700 20px Arial;
+    padding: 10px;
+    background-color: black;
+    color: blanchedalmond;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.upload-button a:hover {
+    background-color: rgba(0, 0, 0, 0.85);
+    
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
